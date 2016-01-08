@@ -1,0 +1,3 @@
+# Rewrite url : aa/bb/cc to index.php?controleur=aa&action=bb&id=cc
+RewriteEngine on
+RewriteRule ^([a-zA-Z]*)/?([a-zA-Z]*)?/?([a-zA-Z0-9]*)?/?$ index.php?controleur=$1&action=$2&id=$3 [NC,L]

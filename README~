@@ -1,0 +1,21 @@
+Fonctionnement:
+
+J'ai recréée un mini framework avec les grandes lignes :
+	-une réécriture d'url : contrôleur/action/id.
+	-une vue index menant au dispatcher qui lui sert de Front-Controller.
+	-Le Front-Controller se charge d'appeler les contrôleurs concernées en prenant en compte une action ou pas.
+	-Un contrôleur par Entité, sachant qu'ici j'ai traités les Persons, Schools et Companies en une entité Profile car ces entités ne possèdent pas beaucoup d'actions différentes. Bien sûr dans un projet à grande échelle, on aurait 3 entités distinctes.
+	-Puis le principe du MVC : le contrôleur se charge du traitement des données en s'aidant des modèles si besoin puis renvois ces données à la vue correspondante.
+	-Ici j'ai fait un modèle par table contenant les requêtes. Dans le cadre d'un projet mis en production, j'aurais découplé un peu plus avec un POCO + 1 mapper par table, le mapper contenant les requêtes préparées principales (CRUD) ainsi que les finders.
+	-Un fichier de configuration pour switcher facilement entre la config de prod et de dev.
+	-Base de donnés MYSQL classique sous PHPMyAdmin. Pour une plus grande scalabilité on devrait utiliser une BDD NoSQL.
+
+
+Remarques :
+	
+	-J'ai rajouté des Posts et des Comments pour donner l'image d'un réseau social mais l’ajout de billet (Post) n'est pas fait et les commentaires désactivés et non terminés car ce n'est pas le sujet ici.
+	-Normalement 1 CSS par vue mais comme le front-end n'est pas la compétence visée, j'ai tout mis dans un seul fichier.
+	-Framework pour la gestion de la pluralisation et pour le front-end est préférable.
+	-J'aurais pu utiliser Ajax pour la combo "industry sector" mais ici je me suis contenté d'une liste non exhaustive.
+	-Pour renseigner le directeur d'une école : ici tout le monde peut créer une école et le directeur de celle-ci porteras son nom. On devrait choisir un autre système plus fonctionnel comme : un utilisateur quelconque peut inscrire une école. On envoi un mail au directeur réel que l'utilisateur aura soumis dans le formulaire, en soulignant que tel utilisateur as voulu inscrire son école sur le site. Puis quand le directeur réel aura un profil on enregistre l'école (pour cela elle sera stockée temporairement).
+

@@ -1,0 +1,126 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    color: #bfbfbf;
+    background: #9367D7;
+    font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+[required] {
+   border: 2px dotted #F95408;
+}
+
+input, textarea, select {
+    border-radius:5px;
+    vertical-align: top;
+    font-size: 18px;
+}
+textarea {
+    height: 50px;
+    width: 420px;
+}
+
+#bodyContent {
+    min-height: 100%;
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    padding: 5px 20px;
+}
+
+#welcomeTitle, #footer {
+    text-align: center;
+}
+
+#authentication {
+  text-align: right;
+  width: 100px;
+  padding-left: 900px;
+}
+
+#signIn {
+  color: #F29C5A;
+  text-transform: uppercase;
+}
+
+#signOut {
+    color: #BA00FF;
+    font-size: 20px;
+    margin-left: 175px;
+    text-decoration: underline;
+}
+
+#joinUs {
+  font-size: 30px;
+  color: #FFC1C1;
+  padding: 20px;
+}
+
+#profilesJoinUs {
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+  font-size: 25px;
+  color: #540871;
+}
+
+#content {
+    margin-bottom : 30px;
+}
+
+#lastNews {
+  font-size: 32px;
+  color: #733EC4;
+}
+
+#answerTitle {
+    font-size : 100%;
+}
+
+#txtComment {
+    width: 50%;
+}
+
+#form {
+  margin-left: 30%;
+}
+
+#formSubmit, #formSubmitSchool {
+  margin-left: 20%;
+  color: #F95408;
+  background-color: #C99EFF;
+  border-radius:10px;
+  font-size: 30px;
+}
+
+#formSubmitSchool {
+  margin-left: 0;
+}
+
+#profileAddSchoolOrCompagny {
+  padding-left: 50px;
+}
+
+#addSchool, #addCompagny {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FFA216;
+}
+
+#addCompagny {
+  color: #FF6D1D;
+}
+
+#schoolDirector {
+  font-size: 20px;
+  color: #FC9905;
+}

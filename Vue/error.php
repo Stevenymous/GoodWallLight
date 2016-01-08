@@ -1,0 +1,1 @@
+<p><?= $this->secure($errorMessage) ?></p>
